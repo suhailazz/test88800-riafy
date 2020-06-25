@@ -1,0 +1,37 @@
+.img-width{
+    width:10%
+}
+.bg-gray{
+    background-color:#eae9e9;
+    height: 45px;
+}
+nav a{
+    color: black;
+    font-size: 20px;
+}
+.font{
+    font-size: 24px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#eae9e9;
+    color: black;
+    
+ }
+ .more {
+    font-size: 12px;
+    line-height: 12px;
+    height: 32px;
+    overflow: hidden;
+}
+.show {
+    overflow: visible;
+    height: auto;
+}
+.btn-n{
+    background-color: white;
+    color: blue($color: #000000);
+}

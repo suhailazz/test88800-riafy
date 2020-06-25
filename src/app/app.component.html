@@ -1,0 +1,73 @@
+<div class="container">
+   
+    <nav class="panel bg-gray" >
+        <i class="fas fa-camera float-left font ml-4 mt-2"></i>
+        <!-- Navbar brand -->
+        <a href="#" class="ml-2">Instagram</a>
+        <i class="far fa-paper-plane float-right font mr-4 mt-2"></i>
+    </nav>
+    <div class="panel panel-default mt-3"  *ngFor="let user of arrImage">
+      <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="caption" >
+                    <img src="{{user.imgsrc}}" class="img-responsive img-width float-left m-2 rounded-circle">
+                    <h5 class="float-left mt-2"><a>{{user.username}}</a></h5>
+                </div>
+              </div>
+          <div class="col-xs-12">
+            <img src="assets/insta.jpg" class="img-responsive img-view">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5><i class="ion-heart text-danger mt-2"></i>2 likes</h5>
+            <div class="row">
+                <div class="col-xs-12">
+                    <i class="far fa-heart font mr-4 mt-2"></i>
+                    <i class="far fa-comment font mr-4 mt-2"></i>
+                    <i class="far fa-paper-plane font mr-4 mt-2"></i>
+                    <i class="fas fa-share-alt font mr-4 mt-2 float-right"></i>
+                </div>
+            </div>
+            <hr class="soften">
+            <h5 class="text-center"><i class="ion-chatbox-working text-primary"></i> Comments</h5>
+  
+            <ul class="media-list">
+              <li ng-repeat="comment in photo.comments.data" class="media">
+                <a class="pull-left" href="">
+                  <img class="img-responsive img-width  m-1  rounded-circle" src="assets/insta.jpg">
+                </a>
+                <div class="media-body">
+                  <a class="media-heading" href="">@comment.from.username</a>
+                  comment.texguug
+                </div>
+              </li>
+              <div class="md-form form-sm">
+                  <div *ngFor="let comment of arrComments">
+                    <div class="more" ng-class="{show: show}">
+                      {{comment.comment}}
+                    </div>
+                    <button ng-click="show = true" type="button" class="btn btn-n float-right">more</button>
+                  </div>
+                <form [formGroup]="myForm">
+                    <input type="text" (keyup.enter)="onEnter()" formControlName="comment" name="comment" id="inputSMEx" class="form-control form-control-sm"  />
+                    <label for="inputSMEx">Comments</label>
+                </form>
+              </div>
+            </ul>
+            <hr class="soften">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+            <i class="fas fa-home font m-5 ml-1"></i>
+            <i class="fas fa-search font m-5  "></i>
+            <i class="fas fa-plus font m-5  "></i>
+            <i class="far fa-heart font m-5 "></i>
+            <img src="assets/insta.jpg" class="img-responsive img-width float-right mt-4 rounded-circle">
+        
+    </div>
+  
+  </div>
