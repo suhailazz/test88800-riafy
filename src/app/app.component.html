@@ -16,7 +16,7 @@
                 </div>
               </div>
           <div class="col-xs-12">
-            <img src="assets/insta.jpg" class="img-responsive img-view">
+            <img src="{{user.imgsrc}}" class="img-responsive img-view">
           </div>
         </div>
         <div class="row">
@@ -36,7 +36,7 @@
             <ul class="media-list">
               <li ng-repeat="comment in photo.comments.data" class="media">
                 <a class="pull-left" href="">
-                  <img class="img-responsive img-width  m-1  rounded-circle" src="assets/insta.jpg">
+                  <img class="img-responsive img-width  m-1  rounded-circle" src="{{user.imgsrc}}">
                 </a>
                 <div class="media-body">
                   <a class="media-heading" href="">@comment.from.username</a>

@@ -30,15 +30,15 @@ export class AppComponent {
 ngOnInit() {
   this.arrImage = [
     {imgsrc: "assets/insta.jpg", username: "Muhammed" },
-    {imgsrc: "assets/insta.jpg", username: "Anupama" },
-    {imgsrc: "assets/insta.jpg", username: "kareem" },
-    {imgsrc: "assets/insta.jpg", username: "Aiza" },
+    {imgsrc: "assets/insta1.jpg", username: "Anupama" },
+    {imgsrc: "assets/insta2.jpg", username: "kareem" },
+    {imgsrc: "assets/insta3.jpg", username: "Aiza" },
     {imgsrc: "assets/insta.jpg", username: "Mubashira" },
-    {imgsrc: "assets/insta.jpg", username: "Anupama" },
-    {imgsrc: "assets/insta.jpg", username: "jebin" },
+    {imgsrc: "assets/insta1.jpg", username: "Anupama" },
+    {imgsrc: "assets/insta3.jpg", username: "jebin" },
     {imgsrc: "assets/insta.jpg", username: "Shafi" },
-    {imgsrc: "assets/insta.jpg", username: "Anupama" },
-    {imgsrc: "assets/insta.jpg", username: "Anupama" },
+    {imgsrc: "assets/insta2.jpg", username: "Anupama" },
+    {imgsrc: "assets/insta1.jpg", username: "Anupama" },
     {imgsrc: "assets/insta.jpg", username: "Anupama" },
     {imgsrc: "assets/insta.jpg", username: "Anupama" },
   ]
